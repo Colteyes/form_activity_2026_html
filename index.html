@@ -24,11 +24,64 @@
           <option value="Gen 10">Gen 12</option>
           <option value="Gen 11">Gen 13</option>
           <option value="Gen 10">Gen 14</option>
-
         </optgroup>
       </select>
 
   </section>
+
+    <section>
+    <label for="GPU">Choose a GPU:</label>
+
+      <select name="GPU">
+        <optgroup label="AMD">
+          <option value="Radeon 6000 Series">Radeon 6000 Series</option>
+          <option value="Radeon 7000 Series">Radeon 7000 Series</option>
+          <option value="Radeon 9000 Series">Radeon 9000 Series</option>
+        </optgroup>
+        <optgroup label="INTEL">
+          <option value="ARC 300 Series">Arc 300 Series</option>
+          <option value="Arc 500">Arc 500 Series</option>
+          <option value="Arc 700">Arc 700 Series</option>
+        </optgroup>
+        <optgroup label="NVIDIA">
+          <option value="3000 Series"> 3000 Series</option>
+          <option value="4000 Series">4000 Series</option>
+          <option value="5000 Series">5000 Series</option>
+        </optgroup>
+      </select>
+  </section>
+
+  <section>
+    <label for="RAM">Choose RAM:</label>
+
+      <select name="RAM">
+        <optgroup label="DDR4">
+          <option value="3200mhz">3200mhz</option>
+          <option value="3600mhz">3600mhz</option>
+          <option value="5000mhz">5000mhz</option>
+        </optgroup>
+        <optgroup label="DDR5">
+          <option value="6000mhz">6000mhz</option>
+          <option value="64000mhz">6400mhz</option>
+          <option value="8000mhz">8000mhz</option>
+        </optgroup>
+      </select>
+    
+      <label for="Amount of Sticks">Amount of Sticks:</label><br />
+      <input type="range" id="Amount of Sticks" name="Amount of Sticks" min="0" max="64" step="8" list="markers" />
+      <datalist id="Amount of Sticks">
+        <option value="8"></option>
+        <option value="16"></option>
+        <option value="24"></option>
+        <option value="32"></option>
+        <option value="48"></option>
+        <option value="64"></option>
+      </datalist>
+
+
+  </section>
+
+
   
 </body>
 </html>
